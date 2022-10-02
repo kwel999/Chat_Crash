@@ -1,0 +1,4 @@
+amino.fix
+colorama
+pyfiglet
+sys
